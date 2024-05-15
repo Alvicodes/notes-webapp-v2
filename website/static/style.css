@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    background: #ececec;
+}
+
+button.btn{
+    font-size: 0.813rem !important;
+}
+.box-area{
+    width: 930px;
+}
+
+.right-box{
+    padding: 2.5rem 0 2.5rem 2.5rem ;
+}
+
+::placeholder {
+    font-size: 12px;
+}
+.featured-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login_img_main {
+    width: 100%;
+    height: 100%;
+}
+
+.fsz-8 {
+    font-size: 0.813rem;
+    padding: 0;
+    margin: 0;
+}
+
+.fsz-9 {
+    font-size: 0.688rem;
+    padding: 0;
+    margin: 0;
+}
+
+.clipboard:hover{
+    background: transparent;
+}
+.clipb_container{
+    border: none;
+}
+.clipb_container:hover{
+    background-color: rgb(184, 181, 181);
+    border: none;
+}
+
+.note-pad {
+    width: 300px;
+    height: 250px;
+    font-size: 0.813rem;
+}
+
+.clr-pink {
+    background: #FE938C;
+}
+.clr-orange {
+    background: #E6B89C;
+}
+.clr-yellow {
+    background: #EAD2AC;
+}
+.clr-lightblue {
+    background: #9CAFB7;
+}
+.clr-blue {
+    background: #4281A4;
+}
+
+.clr-container{
+    list-style-type: none;
+}
+.note-clr {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2.5px solid white;    /* backgound-color: #9CAFB7; */
+    margin:5px 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.note-clr:hover {
+    transform: scale(1.1);
+}

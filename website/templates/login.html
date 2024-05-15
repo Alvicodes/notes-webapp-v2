@@ -1,0 +1,72 @@
+{% extends "base.html" %} {% block title%}Log In{% endblock%}
+
+{% block content %}
+  <!-- Main Container -->
+
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <!-- Login Container -->
+
+    <div class="row border rounded-5 p-3 bg-white shadow box-area">
+      <!-- Left Box -->
+      <div class="col-lg-6 col-md-5 rounded-4 d-flex justify-content-center align-items-center flex-column left-box">
+          <div class="featured-image my-3">
+              <img src="../static/img/1.jpg" alt="Login picture" class="img-fluid rounded-5 login_img_main">
+          </div>
+          <small class="text-wrap text-center">Join thousands of people saving their notes with us!</small>
+      </div>
+      
+      <!-- Login input -->
+      <div class="col-lg-6 col-md-7 right-box">
+          <div class="row align-items-center mx-3 px-2">
+              <div class="header-text my-4">
+                  <h3 class="fw-bold">Welcome</h3>
+                  <p class="fsz-8">Enter your details to access your account.
+                  </p>
+              </div>
+              <form method="POST" >
+                <div class="form-group mb-2">
+                  <label for="email" class="fsz-8">Email Address</label>
+                  <input 
+                    type="email" 
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    />
+                </div>
+                
+                <div class="form-group">
+                  <label for="password" class="fsz-8">Password</label>
+                  <input 
+                    type="password" 
+                    class="form-control"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    />
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary w-100 fs-6 my-3 ">Login</button>
+                <button class="btn btn-lg btn-light w-100 fs-6"><img src="../static/img/google.png" alt="Google logo" style="width: 20px; height: 20px"> <small class=" me-2">Sign in with google</small></button>
+                </form>
+
+
+              <div class="input-group mt-2 mb-5 d-flex justify-content-between">
+                  <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="formCheck">
+                      <label for="formCheck" class="form-check-label text-secondary"><p class="fsz-8">Remember Me</p></label>
+                  </div>
+                  <div class="forgot">
+                      <p class="fsz-8"><a href="#">Forgot Password</a></p>
+                  </div>
+                </div>
+              <div class="row">
+                  <p class="fsz-8">Dont have an account? <a href="/sign-up">Sign Up</a></p>
+              </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
